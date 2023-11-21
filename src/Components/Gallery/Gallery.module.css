@@ -1,0 +1,47 @@
+.container {
+    padding: 5%;
+    width: 100%;
+}
+.container,
+.smallContainer,
+.bigContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.imageCard,
+.imageCard img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .smallContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .smallContainer {
+        column-gap: 15px;
+    }
+    .container {
+        row-gap: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .smallContainer {
+        column-gap: 25px;
+    }
+    .container {
+        row-gap: 25px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        row-gap: 35px;
+    }
+    .smallContainer {
+        column-gap: 35px;
+    }
+}

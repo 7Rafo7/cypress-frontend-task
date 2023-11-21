@@ -1,0 +1,222 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutContainer {
+    padding: 5%;
+    background: #2C3878;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cardDescription {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.btn {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    width: fit-content;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+}
+
+.navContainer {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.logoText {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.actionDescription {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: #333333;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.footerLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.links img {
+    width: 24px;
+    height: 24px;
+}
+
+.footerInput {
+    position: relative;
+
+}
+.footerInput input {
+    border-color: transparent;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+}
+
+
+.footerInput:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 12px;
+    background-size: cover;
+    background-image: url("../../Icons/input-arrow.svg");
+}
+
+
+@media screen and (max-width: 767px) {
+    .logoContainer > * {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .aboutContainer {
+        flex-direction: row;
+    }
+    .card {
+        width: 50%;
+    }
+    .cardTitle {
+        font-size: 24px;
+    }
+    .cardDescription,
+    .logoText {
+        font-size: 18px;
+    }
+    .logoContainer {
+        align-items: center;
+    }
+    .btn,
+    .actionDescription {
+        font-size: 16px;
+    }
+    .footerLinks,
+    .footer {
+        row-gap: 25px;
+    }
+    .logoContainer {
+        row-gap: 20px;
+    }
+    .links {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cardTitle,
+    .logoText {
+        font-size: 36px;
+    }
+    .navContainer {
+        flex-direction: row;
+    }
+    .logoContainer {
+        width: 50%;
+        align-items: flex-start;
+    }
+    .footer {
+        width: 50%;
+        padding: 0 50px;
+    }
+    .footer {
+        align-items: flex-start;
+    }
+    .footerLinks {
+        align-items: flex-end;
+    }
+    .links {
+        justify-content: flex-end;
+        column-gap: 25px;
+    }
+    .actionDescription {
+        font-size: 18px;
+    }
+    .footerInput,
+    .footerInput input {
+        width: 100%;
+    }
+    .aboutContainer,
+    .navContainer {
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .aboutContainer,
+    .navContainer {
+        column-gap: 50px;
+    }
+    .footer {
+        padding: 0 15px 0 60px;
+    }
+}
